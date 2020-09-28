@@ -14,4 +14,18 @@ number(["a", "b", "c"]) # => ["1: a", "2: b", "3: c"]
 """
 def number(lines):
     # Your code here
+    counter = 1
+    output = []
+
+    for item in lines:
+        new_line = f"{ counter}: {item}"
+        output.append(new_line)
+        counter += 1
+
+    print(output)
+    return output
+
+random = ["a", "B", "c", "D"]
+
+number(random)
 
